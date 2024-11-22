@@ -5,9 +5,9 @@ const cheerio = require('cheerio')
 //handler function to handle search bar request
 const handleArticles = async (req, res) => {
     try {
+      console.log("got the request")
       const query = req.body.data.q
       const response = await axios.get(`https://scholar.google.com/scholar?q=${encodeURIComponent(query)}`);
-  
       if (response.status === 200) {
         const $ = cheerio.load(response.data);
         const articles = [];
@@ -20,6 +20,7 @@ const handleArticles = async (req, res) => {
         });
         res.json({ articles });
       } else {
+
         res.status(500).json({ error: 'Failed to fetch search results from Google Scholar' });
       }
     } catch (error) {
