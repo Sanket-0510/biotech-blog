@@ -43,7 +43,7 @@ const Home = () => {
         Authorization: `Bearer ${token}`,
       };
 
-      await axios.post(`http://${process.env.REACT_APP_URL}:9001/post/${postId}/like`, null, { headers });
+      await axios.post(`${process.env.REACT_APP_URL}/post/${postId}/like`, null, { headers });
       setAction(!action);
     } catch (e) {
       console.log(e);
@@ -68,7 +68,7 @@ const Home = () => {
         return;
       }
 
-      await axios.post(`http://${process.env.REACT_APP_URL}:9001/post/${postId}/comment`, { data: comments[postId] }, { headers });
+      await axios.post(`${process.env.REACT_APP_URL}/post/${postId}/comment`, { data: comments[postId] }, { headers });
       setComments({ ...comments, [postId]: '' }); // Clear the comment for the specific post
       setAction(!action);
     } catch (e) {
