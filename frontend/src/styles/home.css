@@ -1,0 +1,118 @@
+/* Apply styles to the main container */
+.home-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Style the search input and button */
+  .search-input {
+    width: 100%;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .search-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Style the search results container */
+  .search-results-container {
+    margin-top: 20px;
+  }
+  
+  /* Style each search result */
+  .search-result {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  /* Style the title and author in search results */
+  .result-title {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .result-author {
+    color: #555;
+  }
+  
+  /* Style the posts container */
+  .posts-container {
+    margin-top: 20px;
+  }
+  
+  /* Style each post */
+  .post {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  /* Style the post content and likes */
+  .post-content {
+    font-size: 16px;
+  }
+  
+  .post-likes {
+    color: #555;
+    margin-top: 10px;
+  }
+  
+  /* Style the like button */
+  .like-button {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Add styles for the plus sign button */
+.plus-button {
+  background-color: blue;
+  color: white;
+  font-size: 24px; /* Adjust the size as needed */
+  width: 50px; /* Adjust the width as needed */
+  height: 50px; /* Adjust the height as needed */
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Style the create post button container */
+.create-post-button {
+  text-align: center;
+  margin: 10px;
+  text-decoration: none;
+}
+
+.like-comment{
+  display: flex;
+ flex-direction: row;
+ justify-content: center;
+}
+
+.like-comment-button {
+  width: 4vw;
+  height: 4vh;
+  margin-top: 0.6vh;
+}
+.comment {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}

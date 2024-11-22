@@ -1,0 +1,79 @@
+/* Navbar container */
+nav {
+  background-color: #ada9a9; /* Background color */
+  padding: 10px; /* Padding around the links */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+/* Navbar links */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex; /* Display links horizontally */
+}
+
+li {
+  margin-right: 20px; /* Spacing between links */
+  position: relative;
+}
+
+/* Link styling */
+a {
+  color: #fff; /* Text color */
+  text-decoration: none; /* Remove underline from links */
+  font-weight: bold; /* Bold text */
+}
+
+a:hover {
+  color: #007bff; /* Change color on hover */
+}
+
+/* Styles for the user dropdown */
+.user-dropdown {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  
+}
+
+.user-icon {
+  width: 30px; /* Adjust the width as needed */
+  height: 30px; /* Adjust the height as needed */
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.user-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Styles for the dropdown menu */
+.dropdown-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  background-color: #d3d2d2;
+  min-width: 120px; /* Adjust the width as needed */
+  z-index: 1;
+  display: none;
+}
+
+.user-dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu li {
+  display: block;
+  padding: 10px;
+}
+
+.dropdown-menu li:hover {
+  background-color: #347fd4;
+  color: #fff;
+}
