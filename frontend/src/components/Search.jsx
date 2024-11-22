@@ -20,6 +20,7 @@ const Search = () => {
       const token = localStorage.getItem("token");
       console.log(process.env.REACT_APP_URL)
       if (!token) {
+        alert("please login if you want to search")
         return;
       }
 
